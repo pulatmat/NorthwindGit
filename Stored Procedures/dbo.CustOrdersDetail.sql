@@ -14,5 +14,6 @@ SELECT ProductName,
     ExtendedPrice=ROUND(CONVERT(MONEY, Quantity * (1 - Discount) * Od.UnitPrice), 2)
 FROM Products P, [Order Details] Od
 WHERE Od.ProductID = P.ProductID AND Od.OrderID = @OrderID
--- boing 747
+-- boing 747 
+-- buick 45
 GO
